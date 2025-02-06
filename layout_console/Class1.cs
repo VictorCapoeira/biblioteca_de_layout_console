@@ -1,0 +1,35 @@
+﻿using System;
+namespace layout_console{
+    public class LayoutWriteLine{
+        public static void Vermelho(string texto){
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+        public static void Amarelo(string texto){
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+        public static void Azul(string texto){
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+        public static void Verde(string texto){
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+        public static void Cinza(string texto){
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+        public static void Preto(string texto){
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine(texto);
+            Console.ResetColor();
+        }
+    }
+}
