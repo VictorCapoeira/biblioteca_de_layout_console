@@ -64,5 +64,9 @@ namespace layout_console{
             Console.ResetColor();
         }
     }
-    
+    public class LayoutLinha{
+        public static void Completa(){
+            Console.WriteLine(new string('-', Console.WindowWidth));
+        }
+    }
 }
