@@ -68,5 +68,8 @@ namespace layout_console{
         public static void Completa(){
             Console.WriteLine(new string('-', Console.WindowWidth));
         }
+        public static void Meia(){
+            Console.WriteLine(new string('-', Console.WindowWidth / 2));
+        }
     }
 }
