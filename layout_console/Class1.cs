@@ -72,4 +72,9 @@ namespace layout_console{
             Console.WriteLine(new string('-', Console.WindowWidth / 2));
         }
     }
+    public class LayoutPosicao{
+        public static void Centralizar(string texto){
+            Console.WriteLine(new string(' ', Console.WindowWidth / 2) + texto);
+        }
+    }
 }
