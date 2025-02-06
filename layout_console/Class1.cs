@@ -72,4 +72,16 @@ namespace layout_console{
             Console.WriteLine(new string('-', Console.WindowWidth / 2));
         }
     }
+    public class LayoutPosicao{
+        public static void Centralizar(string texto){
+            Console.WriteLine(new string(' ', Console.WindowWidth / 2) + texto);
+        }
+        public static void CentralizarLinha(string texto){
+            Console.WriteLine(new string('-', Console.WindowWidth / 2) + texto + new string('-', Console.WindowWidth / 2 - texto.Length));
+        }
+        
+        public static void Esquerda(string texto){
+            Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
+        }
+    }
 }
