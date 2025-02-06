@@ -32,4 +32,37 @@ namespace layout_console{
             Console.ResetColor();
         }
     }
+    public class LayoutWrite{
+        public static void Vermelho(string texto){
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+        public static void Amarelo(string texto){
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+        public static void Azul(string texto){
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+        public static void Verde(string texto){
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+        public static void Cinza(string texto){
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+        public static void Preto(string texto){
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Write(texto);
+            Console.ResetColor();
+        }
+    }
+    
 }
