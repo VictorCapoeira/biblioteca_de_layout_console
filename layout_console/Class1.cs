@@ -153,72 +153,12 @@ namespace Layout_console
         public static void Esquerda(string texto, string cor = " ")
         {
             cor = cor.ToLower();
-            switch (cor)
+            if (cores.TryGetValue(cor, out ConsoleColor corConsole))
             {
-                case "red":
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "vermelho":
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "yellow":
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "amarelo":
-                    Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "blue":
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "azul":
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "green":
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "verde":
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "gray":
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "cinza":
-                    Console.ForegroundColor = ConsoleColor.Gray;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "black":
-                    Console.ForegroundColor = ConsoleColor.Black;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                case "preto":
-                    Console.ForegroundColor = ConsoleColor.Black;
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    Console.ResetColor();
-                    break;
-                default:
-                    Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
-                    break;
+                Console.ForegroundColor = corConsole;
             }
+            Console.WriteLine(new string(' ', Console.WindowWidth - texto.Length) + texto);
+            Console.ResetColor();
         }
     }
 }
