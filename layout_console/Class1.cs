@@ -119,6 +119,16 @@ namespace Layout_console
     }
     public class LayoutPosicao
     {
+        private static readonly Dictionary<string, ConsoleColor> cores = new Dictionary<string, ConsoleColor>(StringComparer.OrdinalIgnoreCase)
+        {
+            { "red", ConsoleColor.Red }, { "vermelho", ConsoleColor.Red },
+            { "yellow", ConsoleColor.Yellow }, { "amarelo", ConsoleColor.Yellow },
+            { "blue", ConsoleColor.Blue }, { "azul", ConsoleColor.Blue },
+            { "green", ConsoleColor.Green }, { "verde", ConsoleColor.Green },
+            { "gray", ConsoleColor.Gray }, { "cinza", ConsoleColor.Gray },
+            { "black", ConsoleColor.Black }, { "preto", ConsoleColor.Black },
+            { "white", ConsoleColor.White }, { "branco", ConsoleColor.White }
+        };
         public static void Centralizar(string texto, string cor = " ")
         {
 
