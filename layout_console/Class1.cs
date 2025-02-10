@@ -161,4 +161,7 @@ namespace Layout_console
             Console.ResetColor();
         }
     }
+    public class LayoutCabecalho{
+        
+    } 
 }
