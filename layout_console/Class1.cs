@@ -81,13 +81,148 @@ namespace layout_console
     }
     public class LayoutLinha
     {
-        public static void Completa()
+        public static void Completa(string cor = " ")
         {
-            Console.WriteLine(new string('-', Console.WindowWidth));
+            cor = cor.ToLower();
+            switch (cor)
+            {
+                case "red":
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "vermelho":
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "yellow":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "amarelo":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "blue":
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "azul":
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "green":
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "verde":
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "gray":
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "cinza":
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "black":
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                case "preto":
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    Console.ResetColor();
+                    break;
+                default:
+                    Console.WriteLine(new string('-', Console.WindowWidth));
+                    break;
+            }
+            
         }
-        public static void Meia()
+        public static void Meia(string cor = " ")
         {
-            Console.WriteLine(new string('-', Console.WindowWidth / 2));
+            cor = cor.ToLower();
+            switch (cor)
+            {
+                case "red":
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "vermelho":
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "yellow":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "amarelo":
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "blue":
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "azul":
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "green":
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "verde":
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "gray":
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "cinza":
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "black":
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                case "preto":
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    Console.ResetColor();
+                    break;
+                default:
+                    Console.WriteLine(new string('-', Console.WindowWidth / 2));
+                    break;
+            }
+            
+            
         }
     }
     public class LayoutPosicao
