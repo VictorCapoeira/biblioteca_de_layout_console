@@ -73,7 +73,12 @@ namespace layout_console{
         }
     }
     public class LayoutPosicao{
-        public static void Centralizar(string texto){
+        public static void Centralizar(string texto, string cor = " "){
+            cor = cor.ToLower();
+            switch(cor){
+                case "red" || "vermelho":
+                break;
+            }
             Console.WriteLine(new string(' ', Console.WindowWidth / 2) + texto);
         }
         public static void CentralizarLinha(string texto){
