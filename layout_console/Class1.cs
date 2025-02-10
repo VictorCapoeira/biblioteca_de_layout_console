@@ -166,15 +166,9 @@ namespace Layout_console
         public static void Minimalista(string titulo)
         {
 
-            Console.WriteLine(new string('=', titulo.Length + 6)); // Linha superior
-            Console.WriteLine($"== {titulo} ==");                 // Texto centralizado
-            Console.WriteLine(new string('=', titulo.Length + 6)); // Linha inferior
-        }
-        public static void Estiloso(string titulo)
-        {
-            Console.WriteLine("╔════════════════════╗");
-            Console.WriteLine($"║  {titulo.PadRight(16)}║");
-            Console.WriteLine("╚════════════════════╝");
+            Console.WriteLine(new string('=', titulo.Length + 6)); 
+            Console.WriteLine($"== {titulo} ==");                 
+            Console.WriteLine(new string('=', titulo.Length + 6)); 
         }
     }
 }
