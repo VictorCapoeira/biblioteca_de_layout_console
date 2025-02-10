@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace layout_console
 {
     public class LayoutWriteLine
