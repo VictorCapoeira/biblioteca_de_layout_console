@@ -161,7 +161,14 @@ namespace Layout_console
             Console.ResetColor();
         }
     }
-    public class LayoutCabecalho{
-        
-    } 
+    public class LayoutCabecalho
+    {
+        public static void Minimalista(string titulo)
+        {
+            
+            Console.WriteLine(new string('=', titulo.Length + 6)); // Linha superior
+            Console.WriteLine($"== {titulo} ==");                 // Texto centralizado
+            Console.WriteLine(new string('=', titulo.Length + 6)); // Linha inferior
+        }
+    }
 }
